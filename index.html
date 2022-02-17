@@ -94,7 +94,7 @@
 
         #aviso #vencedor {
             position: relative;
-            width: 300px;
+            width: 390px;
             height: 90px;
             margin-top: 5px;
             background: #80808020;
@@ -233,11 +233,11 @@
                 }
             }
 
-            let ChamaRepetidamente = setInterval(fetchDados, 3000)
+            let ChamaRepetidamente = setInterval(fetchDados, 5000)
 
             function ChamaFetchDados(opc) {
                 if(opc == true){
-                    ChamaRepetidamente = setInterval(fetchDados, 3000)
+                    ChamaRepetidamente = setInterval(fetchDados, 5000)
                 }else if(opc == false){
                     clearInterval(ChamaRepetidamente)
                     ChamaRepetidamente = null
