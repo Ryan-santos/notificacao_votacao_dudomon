@@ -233,11 +233,11 @@
                 }
             }
 
-            let ChamaRepetidamente = setInterval(fetchDados, 5000)
+            let ChamaRepetidamente = setInterval(fetchDados, 10000)
 
             function ChamaFetchDados(opc) {
                 if(opc == true){
-                    ChamaRepetidamente = setInterval(fetchDados, 5000)
+                    ChamaRepetidamente = setInterval(fetchDados, 10000)
                 }else if(opc == false){
                     clearInterval(ChamaRepetidamente)
                     ChamaRepetidamente = null
