@@ -156,7 +156,7 @@ function anucios() {
             }else{
                 numAnucio++ 
             }
-        }, 40000) // duracao do anuncio
+        }, 60000) // duracao do anuncio
     }
 }
 
@@ -178,6 +178,6 @@ function aviso(opc){
 }
 
 let ChamaFetchDados = setInterval(fetchDados, 10000) // delay de chamada de verificação de votacao
-let ChamaAnuncios = setInterval(anucios, 180000) // delay 3min de chamada do anuncio
+let ChamaAnuncios = setInterval(anucios, 240000) // delay 3min de chamada do anuncio
 
 
