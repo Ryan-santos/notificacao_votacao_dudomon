@@ -89,7 +89,6 @@ function startTimer(duracaoAt) {
     }
 }
 
-
 let numAnucio = 0
 function anucios() {
     if(verificaPopUp()){
@@ -142,6 +141,42 @@ function anucios() {
                 
                 tiraAnuncio()
                 break
+            case 4: 
+                lugarIcone.innerHTML=`<img src="imgens/site.png">`
+    
+                lugarConteudo.innerHTML=`
+                <h1>Já acessaram nosso site ?</h1>
+                <p>Acesse o nosso site para ficar por dentro de tudo que rola nas lives e muito mais, desenvolvido pelo nosso querido mod <br> Ryan ( xSuperPerfect ) Santos.</p>
+                <div class="container-atalhos"><div id="comando">!site</div><div id="link">https://dudomon.epizy.com</div></div>`
+    
+                aviso(opc = true)
+                
+                tiraAnuncio()
+                break
+            case 5: 
+                lugarIcone.innerHTML=`<i class="fas fa-store"></i>`
+    
+                lugarConteudo.innerHTML=`
+                <h1>Já acessaram nossa lojinha ?</h1>
+                <p>Acesse nossa lojinha e troque seus pontos obtidos só por assistir a live por: mensagens para ser lidas em live, sustos, áudios engraçados, e muito mais!</p>
+                <div class="container-atalhos"><div id="comando">!loja</div><div id="link">https://StreamElements.com/dudomon/store</div></div>`
+    
+                aviso(opc = true)
+                
+                tiraAnuncio()
+                break
+            case 6: 
+                lugarIcone.innerHTML=`<i class="fas fa-star"></i>`
+    
+                lugarConteudo.innerHTML=`
+                <h1>Ajude a bater a meta de subs!</h1>
+                <p>Se batermos a meta de subs vai rolar um sorteio de gift card na live onde apenas os subs podem participar, afinal sem eles não tem sorteio! Então escorrega esse sub ai.</p>
+                <div class="container-atalhos"><div id="comando">!meta</div><div id="comando">!prime</div></div>`
+    
+                aviso(opc = true)
+                
+                tiraAnuncio()
+                break
         }
     }
 
@@ -151,12 +186,12 @@ function anucios() {
                aviso(opc = false) 
             }
           
-            if(numAnucio == 3){
+            if(numAnucio == 6){
                 numAnucio = 0
             }else{
                 numAnucio++ 
             }
-        }, 60000) // duracao do anuncio
+        }, 60000) // duracao do anuncio 60000 = 1min
     }
 }
 
@@ -178,6 +213,4 @@ function aviso(opc){
 }
 
 let ChamaFetchDados = setInterval(fetchDados, 10000) // delay de chamada de verificação de votacao
-let ChamaAnuncios = setInterval(anucios, 240000) // delay 3min de chamada do anuncio
-
-
+let ChamaAnuncios = setInterval(anucios, 240000) // delay 4min de chamada do anuncio
