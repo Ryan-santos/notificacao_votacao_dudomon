@@ -134,7 +134,7 @@ function anucios() {
     
                 lugarConteudo.innerHTML=`
                 <h1>JUKEBOX</h1>
-                <p>Agora vocês podem pedir músicas para ouvirem enquanto curtem a live, peça já a sua e só 5 conto!</p>
+                <p>Agora vocês podem pedir músicas para ouvirem enquanto curtem a live, peça já a sua e só 2 conto!</p>
                 <div class="container-atalhos"><div id="comando">!jukes</div><div id="link">http://dudomon.epizy.com/musica</div></div>`
     
                 aviso(opc = true)
