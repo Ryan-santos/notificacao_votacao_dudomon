@@ -177,6 +177,23 @@ function anucios() {
                 
                 tiraAnuncio()
                 break
+            case 7: 
+                lugarIcone.innerHTML=`<i class="fas fa-grin-stars"></i>`
+    
+                lugarConteudo.innerHTML=`
+                <h1>Novos Emotes!</h1>
+                <div class="container-emotes">
+                <img src="imgens/emotes/1.png">
+                <img src="imgens/emotes/2.png">
+                <img src="imgens/emotes/3.png">
+                <img src="imgens/emotes/4.png">
+                <img src="imgens/emotes/5.png">
+                <img src="imgens/emotes/6.png"></div>`
+    
+                aviso(opc = true)
+                
+                tiraAnuncio()
+                break
         }
     }
 
@@ -186,7 +203,7 @@ function anucios() {
                aviso(opc = false) 
             }
           
-            if(numAnucio == 6){
+            if(numAnucio == 7){
                 numAnucio = 0
             }else{
                 numAnucio++ 
@@ -214,3 +231,5 @@ function aviso(opc){
 
 let ChamaFetchDados = setInterval(fetchDados, 10000) // delay de chamada de verificação de votacao
 let ChamaAnuncios = setInterval(anucios, 240000) // delay 4min de chamada do anuncio
+
+
