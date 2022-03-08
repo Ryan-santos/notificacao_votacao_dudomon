@@ -203,6 +203,9 @@ b {
     transform: translateX(0px);
 }
 
+
+
+/* ///////////     staly Adicional    //////////// */
 .container-emotes {
     display: flex;
     flex-direction: row;
