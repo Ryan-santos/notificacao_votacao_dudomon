@@ -177,23 +177,6 @@ function anucios() {
                 
                 tiraAnuncio()
                 break
-            case 7: 
-                lugarIcone.innerHTML=`<i class="fas fa-grin-stars"></i>`
-    
-                lugarConteudo.innerHTML=`
-                <h1>Novos Emotes!</h1>
-                <div class="container-emotes">
-                <img src="imgens/emotes/1.png">
-                <img src="imgens/emotes/2.png">
-                <img src="imgens/emotes/3.png">
-                <img src="imgens/emotes/4.png">
-                <img src="imgens/emotes/5.png">
-                <img src="imgens/emotes/6.png"></div>`
-    
-                aviso(opc = true)
-                
-                tiraAnuncio()
-                break
         }
     }
 
@@ -203,7 +186,7 @@ function anucios() {
                aviso(opc = false) 
             }
           
-            if(numAnucio == 7){
+            if(numAnucio == 6){
                 numAnucio = 0
             }else{
                 numAnucio++ 
