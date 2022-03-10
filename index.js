@@ -206,7 +206,7 @@ function verificaPopUp() {
 function aviso(opc){
     if(opc == true){
         lugarPopUp.classList.add('aparece')
-        som.play()
+        // som.play()
     }else if(opc == false){
         lugarPopUp.classList.remove('aparece')
     }
