@@ -89,7 +89,7 @@ function startTimer(duracaoAt) {
     }
 }
 
-let numAnucio = 7
+let numAnucio = 0
 function anucios() {
     if(verificaPopUp()){
         switch (numAnucio) {
