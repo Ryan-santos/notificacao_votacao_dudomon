@@ -146,7 +146,7 @@ function anucios() {
     
                 lugarConteudo.innerHTML=`
                 <div></div>
-                <h1 style="font-size: 3rem;"><i class="fas fa-angle-double-right"></i> SEU ANÚNCIO AQUI <i class="fas fa-angle-double-left"></i></h1>
+                <h1 style="font-size: 2.5rem;"><i class="fas fa-angle-double-right"></i> SEU ANÚNCIO AQUI <i class="fas fa-angle-double-left"></i></h1>
                 <div></div>`
     
                 aviso(opc = true)
@@ -194,7 +194,7 @@ function anucios() {
     
                 lugarConteudo.innerHTML=`
                 <div></div>
-                <h1 style="font-size: 3rem;"><i class="fas fa-angle-double-right"></i> SEU ANÚNCIO AQUI <i class="fas fa-angle-double-left"></i></h1>
+                <h1 style="font-size: 2.5rem;"><i class="fas fa-angle-double-right"></i> SEU ANÚNCIO AQUI <i class="fas fa-angle-double-left"></i></h1>
                 <div></div>`
     
                 aviso(opc = true)
