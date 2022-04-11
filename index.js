@@ -89,7 +89,7 @@ function startTimer(duracaoAt) {
     }
 }
 
-let numAnucio = 0
+let numAnucio = 7
 function anucios() {
     if(verificaPopUp()){
         switch (numAnucio) {
@@ -142,6 +142,18 @@ function anucios() {
                 tiraAnuncio()
                 break
             case 4: 
+                lugarIcone.innerHTML=`<i class="fas fa-bullhorn"></i>`
+    
+                lugarConteudo.innerHTML=`
+                <div></div>
+                <h1 style="font-size: 3rem;"><i class="fas fa-angle-double-right"></i> SEU ANÚNCIO AQUI <i class="fas fa-angle-double-left"></i></h1>
+                <div></div>`
+    
+                aviso(opc = true)
+                
+                tiraAnuncio()
+                break
+            case 5: 
                 lugarIcone.innerHTML=`<img src="imgens/site.png">`
     
                 lugarConteudo.innerHTML=`
@@ -153,7 +165,7 @@ function anucios() {
                 
                 tiraAnuncio()
                 break
-            case 5: 
+            case 6: 
                 lugarIcone.innerHTML=`<i class="fas fa-store"></i>`
     
                 lugarConteudo.innerHTML=`
@@ -165,13 +177,25 @@ function anucios() {
                 
                 tiraAnuncio()
                 break
-            case 6: 
+            case 7: 
                 lugarIcone.innerHTML=`<i class="fas fa-star"></i>`
     
                 lugarConteudo.innerHTML=`
                 <h1>Ajude a bater a meta de subs!</h1>
                 <p>Se batermos a meta de subs vai rolar um sorteio de gift card na live onde apenas os subs podem participar, afinal sem eles não tem sorteio! Então escorrega esse sub ai.</p>
                 <div class="container-atalhos"><div id="comando">!meta</div><div id="comando">!prime</div></div>`
+    
+                aviso(opc = true)
+                
+                tiraAnuncio()
+                break
+            case 8: 
+                lugarIcone.innerHTML=`<i class="fas fa-bullhorn"></i>`
+    
+                lugarConteudo.innerHTML=`
+                <div></div>
+                <h1 style="font-size: 3rem;"><i class="fas fa-angle-double-right"></i> SEU ANÚNCIO AQUI <i class="fas fa-angle-double-left"></i></h1>
+                <div></div>`
     
                 aviso(opc = true)
                 
@@ -186,7 +210,7 @@ function anucios() {
                aviso(opc = false) 
             }
           
-            if(numAnucio == 6){
+            if(numAnucio == 8){
                 numAnucio = 0
             }else{
                 numAnucio++ 
@@ -214,5 +238,3 @@ function aviso(opc){
 
 let ChamaFetchDados = setInterval(fetchDados, 10000) // delay de chamada de verificação de votacao
 let ChamaAnuncios = setInterval(anucios, 240000) // delay 4min de chamada do anuncio
-
-
