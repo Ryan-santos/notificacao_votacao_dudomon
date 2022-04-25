@@ -238,3 +238,5 @@ function aviso(opc){
 
 let ChamaFetchDados = setInterval(fetchDados, 10000) // delay de chamada de verificação de votacao
 let ChamaAnuncios = setInterval(anucios, 240000) // delay 4min de chamada do anuncio
+
+anucios()
